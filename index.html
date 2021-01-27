@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>HTML Cheatsheet by Shah's Tech </title>
+</head>
+
+<body>
+    <nav>
+        <span class="logo"><img src="copy.png" alt=""></span>
+        <div class="content center">
+            This HTML Cheatsheet is For You!
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li> <b>HTML - Boilerplate</b> - This is the basis html boilerplate code
+
+                <pre class="language-html"><code> &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;div&gt; Div Element</b> - The &lt;div&gt; element is used as a container that divides an HTML
+                document into sections and is short for “division”. &lt;div&gt; elements can contain flow content such
+                as headings, paragraphs, links, images, etc.
+                <pre class="language-html"><code>&lt;div&gt;
+  &lt;h1&gt;A section of grouped elements&lt;/h1&gt;
+  &lt;p&gt;Here’s some text for the section&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;h1&gt;Second section of grouped elements&lt;/h1&gt;
+  &lt;p&gt;Here’s some text&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>HTML Structure</b> - HTML is organized into a family tree structure. HTML elements can have parents,
+                grandparents, siblings, children, grandchildren, etc.
+                <pre class="language-html"><code>&lt;body&gt;
+ &lt;div&gt;
+    &lt;h1&gt;It's div's child and body's grandchild&lt;/h1&gt;
+    &lt;h2&gt;It's h1's sibling&lt;/h2&gt;
+ &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>Closing Tag</b> - An HTML closing tag is used to denote the end of an HTML element. The syntax for a
+                closing tag is a left angle bracket < followed by a forward slash / then the element name and a right
+                    angle bracket to close>.
+                    <pre class="language-html"><code>&lt;body&gt;
+...
+&lt;/body&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>Element Content</b> - The content of an HTML element is the information between the opening and
+                closing tags of an element.
+                <pre class="language-html"><code>&lt;h1&gt;Shah's Tech is awesome! 🙂&lt;/h1&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>HTML - &lt;li&gt; List Item Element</b> - The
+                &lt;li&gt; list item element create list items inside: Ordered lists &lt;ol&gt; , Unordered lists
+                &lt;ul&gt; .
+                <pre class="language-html"><code>&lt;ol&gt;
+  &lt;li&gt;Head east on Prince St&lt;/li&gt;
+  &lt;li&gt;Turn left on Elizabeth&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cookies&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;video&gt; Video Element</b> - The &lt;video&gt; element embeds a media player for video
+                playback. The src attribute will contain the URL to the video. Adding the controls attribute will
+                display video controls in the media player.
+                <pre class="language-html"><code>&lt;video src="test-video.mp4" controls&gt;
+  Video not supported
+&lt;/video&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;img&gt; Image Element</b> - HTML image &lt;img&gt; elements embed images in documents. The src
+                attribute
+                contains the image URL and is mandatory. &lt;img&gt; is an empty element meaning it should not have a
+                closing
+                tag.
+                <pre class="language-html"><code>&lt;img src="image.png"&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>&lt;h1&gt;-&lt;h6&gt; Heading Elements</b> - HTML can use six different levels of heading elements.
+                The heading
+                elements are ordered from the highest level &lt;h1&gt; to the lowest level &lt;h6&gt;.
+                <pre class="language-html"><code>&lt;h1&gt;Breaking News&lt;/h1&gt;
+&lt;h2&gt;This is the 1st subheading&lt;/h2&gt;
+&lt;h3&gt;This is the 2nd subheading&lt;/h3&gt;
+...
+&lt;h6&gt;This is the 5th subheading&lt;/h6&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;p&gt; Paragraph Element</b> - The &lt;p&gt; paragraph element contains and displays a block of
+                text.
+                <pre
+                    class="language-html"><code>&lt;p&gt;This is a block of text! Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;p&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>Unique ID Attributes</b> - In HTML, specific and unique id attributes can be assigned to different
+                elements in order to differentiate between them. -
+
+                When needed, the id value can be called upon by CSS and JavaScript to manipulate, format, and perform
+                specific instructions on that element and that element only. Valid id attributes should begin with a
+                letter and should only contain letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods
+                (.).
+                <pre class="language-html"><code>&lt;h1 id="A1"&gt;Hello World&lt;/h1&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>HTML Attributes</b> - HTML attributes are values added to the opening tag of an element to configure
+                the element or change the element’s default behavior. In the provided example, we are giving the
+                &lt;p&gt;
+                (paragraph) element a unique identifier using the id attribute and changing the color of the default
+                text using the style attribute.
+                <pre class="language-html"><code>&lt;p id="my-paragraph" style="color: green;"&gt;Here’s some text for a paragraph that is being altered by 
+HTML attributes&lt;/p&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;ul&gt; Unordered List Element</b> - The &lt;ul&gt; unordered list element is used to create a
+                list of items in no particular order. Each
+                individual list item will have a bullet point by default.
+                <pre class="language-html"><code>&lt;ul&gt;
+    &lt;li&gt;Play more music 🎸&lt;/li&gt;
+    &lt;li&gt;Read more books 📚&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>alt Attribute</b> - An &lt;img&gt; element can have alternative text via the alt attribute. The
+                alternative text will be displayed if an image fails to render due to an incorrect URL, if the image
+                format is not supported by the browser, if the image is blocked from being displayed, or if the image
+                has not been received from the URL. -
+
+                The text will be read aloud if screen reading software is used and helps support visually impaired users
+                by providing a text descriptor for the image content on a webpage.
+                <pre
+                    class="language-html"><code>&lt;img src="path/to/image" alt="text describing image" /&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;body&gt; Body Element</b> - The &lt;body&gt; element represents the content of an HTML document.
+                Content inside
+                &lt;body&gt; tags are rendered on the web browsers. <b>Note:</b> There can be only one &lt;body&gt;
+                element in a document.
+                <pre class="language-html"><code>&lt;body&gt;
+    &lt;h1&gt;Learn to code with Shah's Tech :)&lt;/h1&gt;
+&lt;/body&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;span&gt; Span Element</b> - The &lt;span&gt; element is an inline container for text and can be
+                used to
+                group text for styling purposes. However, as &lt;span&gt; is a generic container to separate pieces of
+                text from a larger body of text, its use should be avoided if a more semantic element is
+                available.
+                <pre
+                    class="language-html"><code>&lt;p&gt;&lt;span&gt;This text&lt;/span&gt; may be styled differently than the surrounding text.&lt;/p&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;strong&gt; Strong Element</b> - The &lt;strong&gt; element highlights important, serious, or
+                urgent text and browsers will normally render this highlighted text in <b>bold</b> by default.
+                <pre
+                    class="language-html"><code>&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt; text!&lt;/p&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;a&gt; Anchor Element</b> - The &lt;a&gt; anchor element is used to create hyperlinks in an HTML
+                document.
+                The hyperlinks can point to other webpages, files on the same server, a location on the same page,
+                or any other URL via the hyperlink reference attribute, href. The href determines the location the
+                anchor element points to.
+                <pre class="language-html"><code> &lt;!-- Creating text links --&gt;
+&lt;a href="http://www.shahtech.com"&gt;Visit this site&lt;/a&gt;
+    
+&lt;!-- Creating image links --&gt;
+&lt;a href="http://www.shahtech.com"&gt;
+    &lt;img src="logo.jpg"&gt;Click this image
+&lt;/a&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;target&gt; Target Attribute</b> - The target attribute on an &lt;a&gt; anchor element specifies
+                where
+                a hyperlink should be opened. A target value of "_blank" will tell the browser to open the hyperlink
+                in a new tab in modern browsers, or in a new window in older browsers or if the browser has had
+                settings changed to open hyperlinks in a new window.
+                <pre class="language-html"><code>&lt;a href="https://www.google.com" target="_blank"&gt;This anchor element links to google and will open
+in a new tab or window.&lt;/a&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>Link to a Different Part of the Page #</b> - The anchor element &lt;a&gt; can create hyperlinks to
+                different parts of the same HTML document using the href attribute to point to the desired location
+                with # followed by the id of the element to link to.
+                <pre class="language-html"><code>&lt;div&gt;
+  &lt;p id="id-of-element-to-link-to"&gt;A different part of the page!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;a href="#id-of-element-to-link-to"&gt;Take me to a different part of the page&lt;/a&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>Comments</b> - In HTML, comments can be added between an opening &lt;!-- and closing --&gt;. Content
+                inside of comments will not be rendered by browsers, and are usually used to describe a part of code or
+                provide other details.
+
+                Comments can span single or multiple lines.
+
+
+                <pre class="language-html"><code>&lt;!-- Main site content --&gt;
+&lt;div&gt;Content&lt;/div&gt;
+    
+&lt;!--
+    Comments can be 
+    multiple lines long.
+--&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>Whitespace</b> - Whitespace, such as line breaks, added to an HTML document between block-level
+                elements will generally be ignored by the browser and are not added to increase spacing on the rendered
+                HTML page. Rather, whitespace is added for organization and easier reading of the HTML document itself.
+                <pre
+                    class="language-html"><code>&lt;p&gt;Test paragraph&lt;/p&gt;
+
+&lt;!-- The whitespace created by this line, and above/below this line is ignored by the browser--&gt;
+    
+&lt;p&gt;Another test paragraph, this will sit right under the first paragraph, no extra space between.&lt;/p&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>File Path</b> - URL paths in HTML can be absolute paths, like a full URL, for example:
+                https://developer.mozilla.org/en-US/docs/Learn or a relative file path that links to a local file in the
+                same folder or on the same server, for example: ./style.css. Relative file paths begin with ./ followed
+                by a path to the local file. ./ tells the browser to look for the file path from the current folder.
+                <pre class="language-html"><code>&lt;a href="https://developer.mozilla.org/en-US/docs/Web"&gt;The URL for this
+anchor element is an absolute file path.&lt;/a&gt;
+
+&lt;a href="./about.html"&gt;The URL for this anchor element is a relative file path.&lt;/a&gt;</code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;br&gt; Line Break Element</b> - The &lt;br&gt; line break element will create a line break in
+                text and is
+                especially useful where a division of text is required, like in a postal address. The line break element
+                requires only an opening tag and must not have a closing tag.
+                <pre class="language-html"><code>A line break haiku.&lt;br&gt;
+Poems are a great use case.&lt;br&gt;
+Oh joy! A line break. </code></pre>
+            </li>
+            <br>
+            <br>
+            <li> <b>&lt;form&gt; Element </b> - The HTML &lt;form&gt; element is used to collect and send information to an external source.
+ - &lt;form&gt; can contain various input elements. When a user submits the form, information in these input
+                        elements is passed to the source which is named in the action attribute of the form.
+                        <pre class="language-html"><code>&lt;form method="post" action="http://server1"&gt;
+ Enter your name:
+ &lt;input type="text" name="fname"&gt;
+ &lt;br/&gt;
+ Enter your age:
+ &lt;input type="text" name="age"&gt;
+ &lt;br/&gt;
+ &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt; </code></pre>
+            </li>
+            <br>
+            <br>
+        </ol>
+    </div>
+</body>
+
+</html>
